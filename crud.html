@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace Escolar - Gestión de Productos</title>
+    <link rel="stylesheet" href="styles/crud.css">
+</head>
+<body>
+    <nav>
+        <h2>Marketplace</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+            <li><a href="crud.html">Gestión</a></li>
+            <li>Configuración</li>
+        </ul>
+        <button>Publicar Producto</button>
+    </nav>
+
+    <main>
+        <h1>Gestión de Productos</h1>
+        <form class="product-form">
+            <h3>Agregar/Editar Producto</h3>
+            <input type="text" placeholder="Nombre del producto" required>
+            <input type="number" placeholder="Precio" required>
+            <textarea placeholder="Descripción"></textarea>
+            <button type="submit">Guardar</button>
+        </form>
+        <div class="product-list">
+            <h3>Lista de Productos</h3>
+            <div class="product-item">
+                <span>Libro de Matemáticas - $150</span>
+                <button>Editar</button>
+                <button>Eliminar</button>
+            </div>
+            <div class="product-item">
+                <span>Calculadora - $200</span>
+                <button>Editar</button>
+                <button>Eliminar</button>
+            </div>
+            <div class="product-item">
+                <span>Apuntes de Física - $50</span>
+                <button>Editar</button>
+                <button>Eliminar</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="rightBar">
+        <h3>Acciones Rápidas</h3>
+        <button>Exportar Lista</button>
+        <button>Importar Productos</button>
+        <button>Eliminar Todos</button>
+    </div>
+</body>
+</html>

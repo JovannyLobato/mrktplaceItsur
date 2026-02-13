@@ -68,71 +68,90 @@ h1{
     font-weight: bold;
 }
 
-.searchBar{
+.product-form{
     background-color: var(--bg-secundario);
-    height: 8vh;
-    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid var(--border-color);
     display: flex;
-    align-items: center;
-    padding: 0 15px;
-    border-radius: 25px;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.searchBar input{
-    width: 100%;
-    padding: 8px;
-    background: transparent;
-    border: none;
-    outline: none;
+.product-form h3{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.product-form input, .product-form textarea{
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--bg-principal);
     color: var(--text-principal);
 }
 
-.products{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.product{
-    background-color: var(--bg-secundario);
-    border: 1px solid var(--border-color);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.product h3{
-    margin-bottom: 10px;
-}
-
-.product p{
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: var(--color-acento);
-}
-
-.product button{
-    padding: 10px 20px;
+.product-form button{
+    padding: 10px;
     background-color: var(--color-acento);
     color: white;
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+.product-list h3{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.product-item{
+    background-color: var(--bg-secundario);
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-item span{
+    font-weight: bold;
+}
+
+.product-item button{
+    padding: 5px 10px;
+    background-color: var(--color-acento);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
 .rightBar{
     background-color: var(--bg-principal);
     padding: 20px;
     border-left: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.rightBar ul{
-    list-style: none;
-    padding: 0;
-}
-
-.rightBar li{
+.rightBar h3{
     margin-bottom: 10px;
-    color: var(--color-acento);
+    font-weight: bold;
+}
+
+.rightBar button{
+    padding: 10px;
+    background-color: var(--color-acento);
+    color: white;
+    border: none;
+    border-radius: 20px;
     cursor: pointer;
 }
