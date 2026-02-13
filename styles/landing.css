@@ -1,0 +1,113 @@
+:root{
+    --bg-principal: #15202B;
+    --bg-secundario: #192734;
+    --border-color: #38444D;
+    --text-principal: #E7E9EA;
+    --text-secundario: #8899A6;
+    --color-acento: #1DA1F2;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-principal);
+    color: var(--text-principal);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color: var(--bg-secundario);
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+header h1{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-size: 1.2em;
+    color: var(--text-secundario);
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.hero{
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 800px;
+}
+
+.hero h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: var(--text-secundario);
+}
+
+.btn-primary{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--color-acento);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover{
+    background-color: #0d8ecf;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.feature{
+    background-color: var(--bg-secundario);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.feature h3{
+    margin-bottom: 15px;
+    color: var(--color-acento);
+}
+
+.feature p{
+    color: var(--text-secundario);
+}
+
+footer{
+    background-color: var(--bg-secundario);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secundario);
+}

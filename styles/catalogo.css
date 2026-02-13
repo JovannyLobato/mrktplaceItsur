@@ -14,16 +14,13 @@
 body{
     margin: 0;
     font-family: Arial, sans-serif;
-
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     min-height: 100vh;
-
     background-color: var(--bg-principal);
     color: var(--text-principal);
 }
 
-/* MENÚ IZQUIERDO */
 nav{
     background-color: var(--bg-principal);
     padding: 20px;
@@ -60,14 +57,17 @@ nav button{
     cursor: pointer;
 }
 
-/* CENTRO */
 main{
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
 
-/* SEARCH BAR */
+h1{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
 .searchBar{
     background-color: var(--bg-secundario);
     height: 8vh;
@@ -87,29 +87,39 @@ main{
     color: var(--text-principal);
 }
 
-/* FEED */
-.feed{
-    flex: 1;
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-.post{
+.product{
     background-color: var(--bg-secundario);
     border: 1px solid var(--border-color);
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 20px;
     border-radius: 10px;
+    text-align: center;
 }
 
-.post h4{
-    margin: 0 0 5px 0;
+.product h3{
+    margin-bottom: 10px;
 }
 
-.post span{
-    font-size: 12px;
-    color: var(--text-secundario);
+.product p{
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: var(--color-acento);
 }
 
-/* BARRA DERECHA */
+.product button{
+    padding: 10px 20px;
+    background-color: var(--color-acento);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 .rightBar{
     background-color: var(--bg-principal);
     padding: 20px;
@@ -124,14 +134,5 @@ main{
 .rightBar li{
     margin-bottom: 10px;
     color: var(--color-acento);
-    cursor: pointer;
-}
-
-.rightBar button{
-    background-color: var(--color-acento);
-    border: none;
-    padding: 5px 10px;
-    border-radius: 15px;
-    color: white;
     cursor: pointer;
 }
